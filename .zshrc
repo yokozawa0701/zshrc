@@ -39,6 +39,7 @@ bindkey "^n" history-beginning-search-forward-end
 
 # 小文字でも大文字ディレクトリ、ファイルを補完できるようにする
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+# 補完候補を ←↓↑→ でも選択出来るようにする
 zstyle ':completion:*:default' menu select=1 
 
 # プロンプトの表示を変更
