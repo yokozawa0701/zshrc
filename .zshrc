@@ -6,6 +6,7 @@ autoload -Uz compinit && compinit
 if [ -e  /opt/homebrew/share/zsh-completions ]; then
   FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
 fi
+export PATH="/opt/homebrew/opt/openssl@1.1/bin:$PATH"
 
 # rvenv
 eval "$(rbenv init -)"
