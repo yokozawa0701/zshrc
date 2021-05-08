@@ -121,7 +121,7 @@ eval "$(direnv hook zsh)"
 
 # alias
 alias ls="ls -FG"
-alias dc="docker-compose"
+alias dc="docker compose"
 alias g="git"
 alias gg="g grep -n"
 alias s="g status"
