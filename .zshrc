@@ -26,9 +26,11 @@ HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 
-# Ctrl+rでヒストリーのインクリメンタルサーチ、Ctrl+sで逆順
-bindkey '^r' history-incremental-pattern-search-backward
-bindkey '^s' history-incremental-pattern-search-forward
+# peco
+bindkey '^r' cool-peco-history # ctrl+r
+bindkey '^h' cool-peco-ssh
+bindkey '^f' cool-peco-filename-search
+
 
 # コマンドを途中まで入力後、historyから絞り込み
 # 例 ls まで打ってCtrl+pでlsコマンドをさかのぼる、Ctrl+bで逆順
@@ -127,3 +129,7 @@ alias gg="g grep -n"
 alias s="g status"
 alias b="g branch"
 alias be="bundle exec"
+alias gbb=cool-peco-git-checkout
+alias gll=cool-peco-git-log
+alias ta=cool-peco-tmux-session
+alias cg=cool-peco-ghq
