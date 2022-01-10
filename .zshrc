@@ -28,7 +28,6 @@ SAVEHIST=10000
 
 # peco
 bindkey '^r' cool-peco-history # ctrl+r
-bindkey '^h' cool-peco-ssh
 bindkey '^f' cool-peco-filename-search
 
 
