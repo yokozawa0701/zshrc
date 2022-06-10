@@ -7,6 +7,7 @@ if [ -e  /opt/homebrew/share/zsh-completions ]; then
   FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
 fi
 export PATH="/opt/homebrew/opt/openssl@1.1/bin:$PATH"
+export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 # rvenv
 eval "$(rbenv init -)"
@@ -127,3 +128,5 @@ alias gg="g grep -n"
 alias s="g status"
 alias b="g branch"
 alias be="bundle exec"
+alias ff=cool-peco-filename-search
+alias gll=cool-peco-git-log
