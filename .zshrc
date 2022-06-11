@@ -11,6 +11,11 @@ export PATH="/opt/homebrew/opt/openssl@1.1/bin:$PATH"
 # rvenv
 eval "$(rbenv init -)"
 
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
 # 色を使用
 autoload -Uz colors
 colors
