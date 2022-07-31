@@ -137,6 +137,5 @@ alias be="bundle exec"
 alias ff=cool-peco-filename-search
 alias gll=cool-peco-git-log
 alias gbb=cool-peco-git-checkout
-alias gll=cool-peco-git-log
 alias ta=cool-peco-tmux-session
 alias cg=cool-peco-ghq
