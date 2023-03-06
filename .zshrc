@@ -139,3 +139,6 @@ alias gll=cool-peco-git-log
 alias gbb=cool-peco-git-checkout
 alias ta=cool-peco-tmux-session
 alias cg=cool-peco-ghq
+alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
+
+source /Users/d-yokozawa/.docker/init-zsh.sh || true # Added by Docker Desktop
