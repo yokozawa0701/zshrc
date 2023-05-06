@@ -126,6 +126,10 @@ RPROMPT='`rprompt-git-current-branch`'
 # direnv
 eval "$(direnv hook zsh)"
 
+# タブ間でhistoryを共有する
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+shopt -u histappend
+
 # alias
 alias ls="ls -FG"
 alias dc="docker compose"
